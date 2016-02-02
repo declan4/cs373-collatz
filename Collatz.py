@@ -32,9 +32,7 @@ def collatz_eval (i, j) :
 
     def collatz_cycle_length (i):   # New function to calculate cycle length of single number
 
-        assert i > 0
-
-        cycle_length = 0
+        cycle_length = 1
 
         while i > 1:
 
@@ -43,22 +41,28 @@ def collatz_eval (i, j) :
             else:
                 i = i//2
 
-            cycle_length = cycle_length + 1
+            cycle_length += 1
 
+        assert cycle_length > 0
         return cycle_length
 
-    
+    assert (i > 0 and j > 0)
+
     cycle_length = 0
     max_cycle_length = 0
 
-    while (i > 0 and i <= j):
+    while (i < j or i > j):
 
         cycle_length = collatz_cycle_length(i)
 
         if (cycle_length > max_cycle_length):
             max_cycle_length = cycle_length
 
-        i += 1     
+        if (i < j):
+            i += 1
+
+        if (i > j):
+            i -= 1   
 
     return max_cycle_length
 
