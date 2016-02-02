@@ -17,6 +17,7 @@ before_script:
     - uname -a
     - printenv
     - pip list
+    - chmod +x RunCollatz.py
 
 script:
     - date
