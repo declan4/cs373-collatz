@@ -12,7 +12,7 @@
 # imports
 # -------
 
-from io       import StringIO
+from StringIO       import StringIO
 from unittest import main, TestCase
 
 from Collatz import collatz_read, collatz_eval, collatz_print, collatz_solve
@@ -78,7 +78,7 @@ class TestCollatz (TestCase) :
 if __name__ == "__main__" :
     main()
 
-
+"""
 % coverage3 run --branch TestCollatz.py >  TestCollatz.out 2>&1
 
 
@@ -99,4 +99,4 @@ Collatz          18      0      6      0   100%
 TestCollatz      33      1      2      1    94%   79
 ---------------------------------------------------------
 TOTAL            51      1      8      1    97%
-
+"""
