@@ -30,7 +30,7 @@ def collatz_eval (i, j) :
     return the max cycle length of the range [i, j]
     """
 
-    def collatz_cycle_length (i):
+    def collatz_cycle_length (i):   # New function to calculate cycle length of single number
 
         assert i > 0
 
