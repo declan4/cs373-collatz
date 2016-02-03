@@ -37,6 +37,10 @@ def collatz_eval (i, j) :
     """
 
     def collatz_cycle_length (i):   # New function to calculate cycle length of single number
+        """
+        i the number to calculate cycle length of
+        return cycle length of i
+        """
 
         cycle_length = 1
         cached_length = 0
@@ -61,25 +65,25 @@ def collatz_eval (i, j) :
     assert (i > 0 and j > 0)
     assert (i < 1000000 and j < 1000000)
 
-    cycle_length = 0
-    max_cycle_length = 0
+    cycle_length = 1
+    max_cycle_length = 1
 
     if (i == j):
         max_cycle_length = collatz_cycle_length(i)
 
+    if (j < i):     # Swap i and j if i is larger than j
+        store = i
+        i = j
+        j = store
 
-    while (i < j or i > j):
+    while (i <= j):
 
         cycle_length = collatz_cycle_length(i)
 
         if (cycle_length > max_cycle_length):
             max_cycle_length = cycle_length
 
-        if (i < j):
-            i += 1
-
-        if (i > j):
-            i -= 1   
+        i += 1  
 
     assert max_cycle_length > 0        
     return max_cycle_length
