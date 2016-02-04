@@ -1,12 +1,13 @@
+Declan-Duffys-MacBook-Pro:cs373-collatz declanduffy$ coverage run --branch testcollatz.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.846s
+Ran 15 tests in 0.936s
 
 OK
 Declan-Duffys-MacBook-Pro:cs373-collatz declanduffy$ coverage report -m
 Name             Stmts   Miss Branch BrPart  Cover   Missing
 ------------------------------------------------------------
-Collatz.py          42      0     16      0   100%   
+Collatz.py          45      0     18      0   100%   
 testcollatz.py      61      0      4      0   100%   
 ------------------------------------------------------------
-TOTAL              103      0     20      0   100%   
+TOTAL              106      0     22      0   100% 

@@ -45,6 +45,8 @@ def collatz_eval (i, j) :
         cycle_length = 1
         cached_length = 0
 
+        potential_cache = i
+
         while i > 1:
 
             if i in cache:
@@ -58,6 +60,9 @@ def collatz_eval (i, j) :
                 i = i // 2
 
             cycle_length += 1
+
+        if potential_cache not in cache: # Add original i and its cycle length to cache if not already in cache
+        	cache[potential_cache] = cycle_length
 
         assert cycle_length > 0
         return cycle_length
