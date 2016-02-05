@@ -1,0 +1,377 @@
+commit fc8a03685c859f9c1858361697d49d22cba27d21
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 17:52:41 2016 -0600
+
+    Updating SphereCollatz.py with latest version of Collatz.py
+
+ SphereCollatz.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit b7415b26335ed15da0545c72f91350c186c75b4e
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 17:46:11 2016 -0600
+
+    Final updates and commit
+
+ .coverage                             |   2 +-
+ TestCollatz.out                       |   8 +-
+ TestCollatz.py                        |  13 ++-
+ collatz-tests/dd29835-RunCollatz.in   | 105 +++++++++++++++++++++++
+ collatz-tests/dd29835-RunCollatz.out  | 105 +++++++++++++++++++++++
+ collatz-tests/dd29835-TestCollatz.out |  13 +++
+ collatz-tests/dd29835-TestCollatz.py  | 155 ++++++++++++++++++++++++++++++++++
+ 7 files changed, 395 insertions(+), 6 deletions(-)
+
+commit 7c4ddf56bd5ce4aa48b2321ce5fe046d2d726b1a
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 17:23:27 2016 -0600
+
+    Attempt to fix broken Travis build 7 - Adding calculated cycle lengths to cache
+
+ .coverage                          |   2 +-
+ Collatz.py                         |   5 +++++
+ RunCollatz.in                      |  45 +++++++++++++++++++++++++++++++++++++
+ RunCollatz.out                     |  45 +++++++++++++++++++++++++++++++++++++
+ TestCollatz.out                    |   7 +++---
+ __pycache__/Collatz.cpython-35.pyc | Bin 31769 -> 31820 bytes
+ 6 files changed, 100 insertions(+), 4 deletions(-)
+
+commit f55bbcc1316e076a200b1a44c9c22117900bdcfd
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 17:07:15 2016 -0600
+
+    Attempt to fix broken Travis build 6 - timing out
+
+ RunCollatz.in  | 50 --------------------------------------------------
+ RunCollatz.out | 50 --------------------------------------------------
+ 2 files changed, 100 deletions(-)
+
+commit 1bb1a0dfaec76142fadd92f88227c8750e6e7065
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 16:55:40 2016 -0600
+
+    Attempt to fix broken Travis build 5 - new line needed at end of .in and .out files
+
+ RunCollatz.in  | 109 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ RunCollatz.out | 109 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 218 insertions(+)
+
+commit 03b1ce5e9111058c0656dc034f8eb2f85529a9b2
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 16:53:29 2016 -0600
+
+    Attempt to fix broken Travis build 4
+
+ RunCollatz.in  | 2 +-
+ RunCollatz.out | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 0f43fd22b1956f94a1c90afcbd7a263bd7819ed0
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 16:45:02 2016 -0600
+
+    Attempt to fix broken Travis build 3
+
+ RunCollatz.in    | 21 +--------------------
+ RunCollatz.out   | 21 +--------------------
+ SphereCollatz.py |  5 ++---
+ 3 files changed, 4 insertions(+), 43 deletions(-)
+
+commit 452b3b1fb2342b23b0d9a345db5975bda7d3abac
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 16:35:32 2016 -0600
+
+    Attempt to fix broken Travis build 2
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8bf00a8b15c81c25b0ec5c9a72e71843079c2920
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 16:28:30 2016 -0600
+
+    Attempt to fix broken Travis build
+
+ RunCollatz.in                         | 92 +----------------------------------
+ RunCollatz.out                        | 92 +----------------------------------
+ collatz-tests/EID-RunCollatz.in       |  0
+ collatz-tests/EID-RunCollatz.out      |  0
+ collatz-tests/EID-TestCollatz.out     |  0
+ collatz-tests/EID-TestCollatz.py      |  0
+ collatz-tests/dd29835-RunCollatz.in   |  0
+ collatz-tests/dd29835-RunCollatz.out  |  0
+ collatz-tests/dd29835-TestCollatz.out |  0
+ collatz-tests/dd29835-TestCollatz.py  |  0
+ makefile                              |  8 +--
+ 11 files changed, 6 insertions(+), 186 deletions(-)
+
+commit 36f70512436a17b62aec907f62ab7ce586bc0d07
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 16:14:52 2016 -0600
+
+    RunCollatz.in and RunCollatz.out updated with values & coverage report generated
+
+ .coverage       |   2 +-
+ RunCollatz.in   | 259 ++++++++++++++++++++++++--------------------------------
+ RunCollatz.out  | 114 ++++++++++++++++++++++++-
+ TestCollatz.out |  17 ++--
+ TestCollatz.py  |   5 ++
+ 5 files changed, 234 insertions(+), 163 deletions(-)
+
+commit 731a9b52dfd0e731ef866dd070e5ccec8c28c62a
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Thu Feb 4 14:16:06 2016 -0600
+
+    Testing RunCollatz.in with 150 tests - RunCollatz.out not populated
+
+ Collatz.py                         |   2 +-
+ RunCollatz.in                      | 155 ++++++++++++++++++++++++++++++++++++-
+ __pycache__/Collatz.cpython-35.pyc | Bin 31769 -> 31769 bytes
+ 3 files changed, 152 insertions(+), 5 deletions(-)
+
+commit 58bc7ebc5c8cbc495f54ae1b7799179ea6f31677
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Wed Feb 3 17:54:27 2016 -0600
+
+    Bug fixed & tests added fixes #17
+
+ Collatz.py                         |  20 +++++++++++--------
+ SphereCollatz.py                   |  40 +++++++++++++++++++++++++++----------
+ TestCollatz.py                     |  25 +++++++++++++++++++----
+ __pycache__/Collatz.cpython-35.pyc | Bin 31683 -> 31769 bytes
+ 4 files changed, 63 insertions(+), 22 deletions(-)
+
+commit c483a3782b6bb907f087528f52900c8b394f13fd
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Tue Feb 2 20:32:05 2016 -0600
+
+    Cache implemented -- cycle lengths of 5000 random odd numbers stored
+
+ .coverage                          |   1 +
+ Collatz.py                         |  24 +++++-
+ Collatz.pyc                        | Bin 0 -> 2358 bytes
+ SphereCollatz.py                   | 147 +++++++++++++++++++++++++++++++++++++
+ TestCollatz.py                     |  22 +++++-
+ __pycache__/Collatz.cpython-35.pyc | Bin 1834 -> 31683 bytes
+ 6 files changed, 190 insertions(+), 4 deletions(-)
+
+commit 1e75be5a626d103ab423b80bbb43310faf0109c8
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 19:45:06 2016 -0600
+
+    Successful Travis build - updated collatz_eval() with input where i is larger than j working -- updated assertions
+
+ RunCollatz.out                     |   8 ++++----
+ TestCollatz.py                     |  10 +++++-----
+ __pycache__/Collatz.cpython-35.pyc | Bin 1834 -> 1834 bytes
+ 3 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 2787bb70cfe0f9ea75b6f0bbeb0bc70d037d889f
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 19:41:24 2016 -0600
+
+    Successful Travis build - updated collatz_eval() with input where i is larger than j working
+
+ Collatz.py                         |  18 +++++++++++-------
+ __pycache__/Collatz.cpython-35.pyc | Bin 1760 -> 1834 bytes
+ 2 files changed, 11 insertions(+), 7 deletions(-)
+
+commit bb1bb8a371a428b772d2242b00569a23da6e783c
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 19:16:40 2016 -0600
+
+    collatz_eval() attempt 8
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 86160382ebd03b4ea6d40ddea6c1b97299265139
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 19:14:28 2016 -0600
+
+    collatz_eval() attempt 8
+
+ .travis.yml    | 2 +-
+ TestCollatz.py | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit e2232f048de8ee74541928ec5c83b58785af0ccd
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 19:07:35 2016 -0600
+
+    collatz_eval() attempt 7 - Edited RunCollatz.out
+
+ RunCollatz.out | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit cafc008b3bf0bbc17f50dc7129097c68c3b0ff9d
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 19:01:08 2016 -0600
+
+    collatz_eval() attempt 6 - piazza sugestion
+
+ TestCollatz.py | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit ec9467af36e988bb71bbf973839f278a91a8819a
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 18:56:52 2016 -0600
+
+    collatz_eval() attempt 6
+
+ TestCollatz.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 9d9f99135a4876e24b529eac51d1d72bfc7b234d
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 18:53:59 2016 -0600
+
+    collatz_eval() attempt 5 - removed coverage log
+
+ __pycache__/Collatz.cpython-35.pyc | Bin 0 -> 1760 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit c86e94436afd543c565fadee64641886470a498d
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 18:52:48 2016 -0600
+
+    collatz_eval() attempt 5 - removed coverage log
+
+ .coverage                          |   1 -
+ .travis.yml                        |   2 +-
+ Collatz.pyc                        | Bin 2228 -> 0 bytes
+ __pycache__/Collatz.cpython-35.pyc | Bin 1760 -> 0 bytes
+ 4 files changed, 1 insertion(+), 2 deletions(-)
+
+commit 1d129e3d590af8bcab8f0a9017f06ee197dd2100
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 18:50:41 2016 -0600
+
+    collatz_eval() attempt 4 - changed .yml permissions
+
+ .travis.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a65225a7656282b3cdc89e2a7ccdc7bd56412337
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 18:07:00 2016 -0600
+
+    collatz_eval() attempt 3
+
+ collatz-tests/EID-RunCollatz.in       | 0
+ collatz-tests/EID-RunCollatz.out      | 0
+ collatz-tests/EID-TestCollatz.out     | 0
+ collatz-tests/EID-TestCollatz.py      | 0
+ collatz-tests/dd29835-RunCollatz.in   | 0
+ collatz-tests/dd29835-RunCollatz.out  | 0
+ collatz-tests/dd29835-TestCollatz.out | 0
+ collatz-tests/dd29835-TestCollatz.py  | 0
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+
+commit ba4b21e41c8c3c6a3b553a6efb307b1f21b21b94
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 18:05:31 2016 -0600
+
+    collatz_eval() attempt 2
+
+ Collatz.py                            | 2 +-
+ collatz-tests/dd29835-RunCollatz.in   | 0
+ collatz-tests/dd29835-RunCollatz.out  | 0
+ collatz-tests/dd29835-TestCollatz.out | 0
+ collatz-tests/dd29835-TestCollatz.py  | 0
+ 5 files changed, 1 insertion(+), 1 deletion(-)
+
+commit e4c25624700d3a3c6a8da2bfb309cedea6de3ca1
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Mon Feb 1 17:53:05 2016 -0600
+
+    collatz_eval() attempt 1
+
+ .coverage                          |   1 +
+ .travis.yml                        |   2 +-
+ Collatz.py                         |  35 +++++++++++++++++++++++++++++++++--
+ Collatz.pyc                        | Bin 0 -> 2228 bytes
+ TestCollatz.py                     |  10 +++++-----
+ __pycache__/Collatz.cpython-35.pyc | Bin 1322 -> 1760 bytes
+ 6 files changed, 40 insertions(+), 8 deletions(-)
+
+commit bf34bd7e703bb231972a311cfa41a726ac3c8de7
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Sat Jan 30 20:50:45 2016 -0600
+
+    Travis CI attempt
+
+ .travis.yml    | 2 +-
+ TestCollatz.py | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit b97f3dcb882749b21307d88ade493ee2a32646e9
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Sat Jan 30 20:40:41 2016 -0600
+
+    Travis CI attempt
+
+ TestCollatz.py                     |   2 +-
+ __pycache__/Collatz.cpython-35.pyc | Bin 0 -> 1322 bytes
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+commit c0e83d4df3fa4a3478c3a318d4274ebc26ced155
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Sat Jan 30 20:30:20 2016 -0600
+
+    Code files copied from public repo
+
+ Collatz.py      |  61 +++++++++++++++++++++++++++++++++
+ RunCollatz.in   |   4 +++
+ RunCollatz.out  |   4 +++
+ RunCollatz.py   |  47 ++++++++++++++++++++++++++
+ TestCollatz.out |  11 ++++++
+ TestCollatz.py  | 102 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ dev             |   0
+ makefile        |   2 +-
+ 8 files changed, 230 insertions(+), 1 deletion(-)
+
+commit d2bc0dd83754c62f75bd32db4dc944baa3b8e1fc
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Fri Jan 29 20:45:30 2016 -0600
+
+    Travis CI attempt 3
+
+ makefile | 76 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 76 insertions(+)
+
+commit 694b55f60f88a66f4a65741446e4ac6a875a21b8
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Fri Jan 29 20:42:29 2016 -0600
+
+    Travis CI attempt 2
+
+ .travis.yml | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+
+commit ecedbb53fdb88d3dbc87a025042a3d86f9514976
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Fri Jan 29 20:31:28 2016 -0600
+
+    Travis CI attempt 1
+
+ .travis.yml | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 93e762c04356a23d3586f220a25a5de806f9bc9a
+Author: Declan Duffy <declan.duffy94@hotmail.com>
+Date:   Fri Jan 29 20:02:43 2016 -0600
+
+    dev file
+
+ dev | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f0d11d83761490005abf6f01abae661c94e42594
+Author: declan4 <declan.duffy@ucdconnect.ie>
+Date:   Sat Jan 23 16:03:52 2016 -0600
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
